@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D</title>
+    <link rel="shortcut icon" type="image/x-icon" href="topicon.ico">
+    <script src="jsc3d.js"></script>
+    <script src="jsc3d.touch.js"></script>
+    <script src="jsc3d.webgl.js"></script>
+</head>
+<body>
+
+
+<canvas id="cv" width="420px" height="320px"></canvas>
+
+<script>
+    var canvasTag = document.getElementById('cv');
+    var viewer = new JSC3D.Viewer(canvasTag, {
+        SceneUrl: 'bmw/bmw.obj',
+        InitRotationX: -100,
+        InitRotationY: 50,
+        InitRotationZ: 20,
+        RenderMode: 'texturesmooth'
+    });
+    viewer.init();
+</script>
+
+</body>
+</html>
