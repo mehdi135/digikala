@@ -32,6 +32,7 @@ require ('introduction.php');
 require ('slider_scroll.php');
 require ('tabs.php');
 require ('gallery.php');
+require ('gallery.php');
 ?>
 <script>
     $('.input_checkbox').click(function () {
